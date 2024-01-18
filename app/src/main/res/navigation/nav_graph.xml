@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/nav_graph"
+        app:startDestination="@id/loginFragment">
+
+    <fragment
+            android:id="@+id/mainFragment"
+            android:name="dk.itu.moapd.scootersharing.mhas.fragments.MainFragment"
+            android:label="MainFragment"
+            tools:layout="@layout/fragment_main">
+        <action
+                android:id="@+id/show_start_ride_fragment"
+                app:destination="@id/startRideFragment" />
+        <action
+                android:id="@+id/show_update_ride_fragment"
+                app:destination="@id/updateRideFragment" />
+        <action
+                android:id="@+id/show_scooter_details_fragment_from_main_fragment"
+                app:destination="@id/scooterDetailsFragment" />
+        <action
+                android:id="@+id/show_scooters"
+                app:destination="@id/scootersFragment" />
+        <action
+                android:id="@+id/show_login_fragment_from_main_fragment"
+                app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/startRideFragment"
+            android:name="dk.itu.moapd.scootersharing.mhas.fragments.StartRideFragment"
+            android:label="StartRideFragment"
+            tools:layout="@layout/fragment_start_ride">
+        <action
+                android:id="@+id/show_main_fragment_from_start_ride_fragment"
+                app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/updateRideFragment"
+            android:name="dk.itu.moapd.scootersharing.mhas.fragments.UpdateRideFragment"
+            android:label="UpdateRideFragment"
+            tools:layout="@layout/fragment_update_ride">
+        <action
+                android:id="@+id/show_main_fragment_from_update_ride_fragment"
+                app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/loginFragment"
+            android:name="dk.itu.moapd.scootersharing.mhas.fragments.LoginFragment"
+            android:label="LoginFragment"
+            tools:layout="@layout/fragment_login">
+        <action
+                android:id="@+id/show_main_fragment"
+                app:destination="@id/mainFragment" />
+        <action
+                android:id="@+id/show_sign_up_fragment"
+                app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/signUpFragment"
+            android:name="dk.itu.moapd.scootersharing.mhas.fragments.SignUpFragment"
+            android:label="SignUpFragment"
+            tools:layout="@layout/fragment_sign_up" >
+        <action
+                android:id="@+id/show_login_fragment"
+                app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/scooterDetailsFragment"
+            android:name="dk.itu.moapd.scootersharing.mhas.fragments.ScooterDetailsFragment"
+            android:label="ScooterDetailsFragment"
+            tools:layout="@layout/fragment_scooter_details">
+        <action
+                android:id="@+id/show_update_scooter_fragment_from_scooter_details_fragment"
+                app:destination="@id/updateRideFragment" />
+        <action
+                android:id="@+id/show_main_fragment_from_scooter_details_fragment"
+                app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/scootersFragment"
+            android:name="dk.itu.moapd.scootersharing.mhas.fragments.ScootersFragment"
+            android:label="ScootersFragment"
+            tools:layout="@layout/fragment_scooters">
+        <action
+                android:id="@+id/show_main_fragment"
+                app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>

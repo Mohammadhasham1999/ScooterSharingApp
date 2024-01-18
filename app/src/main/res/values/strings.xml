@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Scooter Sharing</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false"> AIzaSyAheX9sHDrM4fRo_8OfAveXf_ih64aEgpQ </string>
+    <string name="edit_text_name"> Enter Name </string>
+    <string name="edit_text_location"> Enter Location </string>
+    <string name="update_text_name"> The current scooter name </string>
+    <string name="update_text_location"> The current scooter location </string>
+    <string name="start_ride_button"> Start Ride </string>
+    <string name="update_ride_button"> Update </string>
+    <string name="cancel_update_ride_button" > Cancel </string>
+    <string name="update_scooter_name"> Update scooter name </string>
+    <string name="list_scooters_button"> Show Scooters </string>
+    <string name="snack_bar"> SnackBar </string>
+    <string name="login"> LOGIN </string>
+    <string name="username"> Username </string>
+    <string name="password"> Password </string>
+    <string name="login_button"> Login </string>
+    <string name="sign_up_button"> Sign Up </string>
+    <string name="registration_form_text"> REGISTRATION FORM </string>
+    <string name="email"> Email </string>
+    <string name="last_name"> Last Name  </string>
+    <string name="register"> Register </string>
+    <string name="end_ride_button_text"> End </string>
+    <string name="start_ride_button_text"> Start </string>
+
+
+</resources>
